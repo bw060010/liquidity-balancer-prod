@@ -233,8 +233,10 @@
             @else
                 <section class="ad-placeholder">
         @endif
-
         <!-- Ad content will be dynamically inserted here by Google Ads or other ad services -->
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
         </section>
         @if (isset($unitsOfCoinsResult))
             <section class="results-container">
