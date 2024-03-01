@@ -16,7 +16,10 @@
 
             gtag('config', 'G-WJX8ZVDJZY');
         </script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7011030500396488"
+            crossorigin="anonymous"></script>
     @endif
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
