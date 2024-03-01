@@ -1,0 +1,5 @@
+[01-Mar-2024 03:00:40 UTC] PHP Warning:  require(C:\Users\SP\Documents\GitHub\liquidity-balancer-prod/vendor/autoload.php): Failed to open stream: No such file or directory in C:\Users\SP\Documents\GitHub\liquidity-balancer-prod\artisan on line 18
+[01-Mar-2024 03:00:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\SP\Documents\GitHub\liquidity-balancer-prod/vendor/autoload.php' (include_path='.;C:\php\pear') in C:\Users\SP\Documents\GitHub\liquidity-balancer-prod\artisan:18
+Stack trace:
+#0 {main}
+  thrown in C:\Users\SP\Documents\GitHub\liquidity-balancer-prod\artisan on line 18

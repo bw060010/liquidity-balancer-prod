@@ -58,7 +58,7 @@
 
         <section class="form-container">
             <h2>Input</h2>
-            <form action="/calculate#ad-placeholder" method="POST" class="form">
+            <form action="/#ad-placeholder" method="POST" class="form">
                 @csrf
                 <div class="section">
                     <div class="input-group">
