@@ -132,7 +132,7 @@ p {
 
 .ad-placeholder {
     grid-area: ad;
-    min-height: 100px; /* Adjust the height as necessary */
+    min-height: 250px; /* Adjust the height as necessary */
     background-color: var(
         --main-bg-color
     ); /* Set a background color that matches your site's color scheme */
