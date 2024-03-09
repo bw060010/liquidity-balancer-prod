@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\CalculationController;
+use App\Http\Controllers\BlogController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -21,3 +22,4 @@ Route::get('/', function () {
 
 Route::get('/', [CalculationController::class, 'showForm']);
 Route::post('/', [CalculationController::class, 'performCalculation']);
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
