@@ -1,5 +1,6 @@
 /* File: public/css/style.css */
 
+/* Root variables for consistent theming */
 :root {
     --main-bg-color: #f0f8ff;
     --main-text-color: #333333;
@@ -8,6 +9,7 @@
     --third-color: #2790c4;
 }
 
+/* Global styles for body and html */
 body,
 html {
     background-color: var(--main-bg-color);
@@ -18,6 +20,7 @@ html {
     height: 100%; /* Ensure the html and body take up the full height */
 }
 
+/* Headings styles */
 h1,
 h2,
 h3 {
@@ -25,10 +28,12 @@ h3 {
     color: var(--highlight-color); /* Stylized color */
 }
 
+/* Paragraph styles */
 p {
     font-size: 1rem;
 }
 
+/* Grid container layout */
 .grid-container {
     display: grid;
     grid-template-areas:
@@ -36,15 +41,16 @@ p {
         "form"
         "ad"
         "results"
+        "container"
         "footer";
     gap: 10px;
     padding: 15px;
 }
 
-/* Navigation Styles */
+/* Navigation styles */
 .navigation {
     display: flex;
-    justify-content: start; /* Adjust this as necessary */
+    justify-content: start;
     gap: 20px;
     padding: 10px;
 }
@@ -60,23 +66,25 @@ p {
     text-decoration: underline;
 }
 
+/* Header styles */
 .header {
     display: grid;
     grid-area: header;
-    grid-template-columns: auto 1fr; /* Auto size for logo and remaining space for text */
-    align-items: center; /* Vertically align logo and text */
-    gap: 15px; /* Spacing between logo and text */
-    padding: 10px; /* Padding around the header */
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Main Content Styles */
+/* Main content padding */
 .main-content {
     padding: 20px;
 }
 
+/* Form container styles */
 .form-container {
     grid-area: form;
     background: #ffffff;
@@ -85,6 +93,7 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Results container styles */
 .results-container {
     grid-area: results;
     background: #ffffff;
@@ -93,11 +102,13 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo styles */
 .logo-container svg {
     width: 125px; /* Default width for mobile */
     height: auto; /* Maintain aspect ratio */
 }
 
+/* Text container styles */
 .text-container h1 {
     margin: 12px 0;
 }
@@ -107,14 +118,13 @@ p {
     margin: 12px 0;
 }
 
-/* Blog link container */
+/* Blog link container styles */
 .blog-link-container {
     margin-left: auto; /* Pushes the container to the end of the header */
     padding: 10px;
 }
 
-/* Blog link */
-/* Blog link styling similar to form button */
+/* Blog link styles */
 .blog-link {
     display: inline-block; /* Ensures padding and margin are respected */
     background-color: var(--button-bg-color);
@@ -139,24 +149,24 @@ p {
 .input-group {
     display: flex;
     align-items: center;
-    gap: 10px; /* Adjust the space between elements */
-    margin-bottom: 15px; /* Space between input groups */
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
 .input-label {
-    flex: 2; /* Allows the label to take up available space */
-    min-width: 140px; /* Ensures labels do not become too narrow on smaller screens */
+    flex: 2;
+    min-width: 140px;
     font-size: 1rem;
 }
 
 .input-field[readonly] {
-    background-color: #f0f0f0; /* Light grey background */
-    color: #6c757d; /* Grey text to indicate it's not active */
-    cursor: not-allowed; /* Shows a 'not-allowed' cursor on hover */
+    background-color: #f0f0f0;
+    color: #6c757d;
+    cursor: not-allowed;
 }
 
 .input-field {
-    flex: 1; /* Allows the input field to take twice the space of the label */
+    flex: 1;
     padding: 10px;
     border: 1px solid #cccccc;
     border-radius: 4px;
@@ -178,21 +188,21 @@ p {
     background-color: var(--third-color);
 }
 
+/* Ad placeholder styles */
 .ad-placeholder {
     grid-area: ad;
-    min-height: 250px; /* Adjust the height as necessary */
-    background-color: var(
-        --main-bg-color
-    ); /* Set a background color that matches your site's color scheme */
+    min-height: 250px;
+    background-color: var(--main-bg-color);
     display: none;
     align-items: center;
     justify-content: center;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 15px 0; /* Same as gap in grid for consistency */
+    margin: 15px 0;
 }
 
+/* Results styles */
 .results-container h2 {
     margin-bottom: 1rem;
 }
@@ -234,28 +244,28 @@ p {
 
 .results em {
     font-weight: bold;
-    color: var(--third-color); /* Highlighting the amounts */
+    color: var(--third-color);
 }
 
-/* Tooltip container */
+/* Tooltip container styles */
 .tooltip-container {
     display: flex;
     align-items: center;
-    position: relative; /* Position relative to allow absolute positioning inside */
+    position: relative;
 }
 
-/* Tooltip Icon */
+/* Tooltip icon styles */
 .tooltip-icon {
     display: inline-flex;
-    margin-left: 5px; /* Small space between label and icon */
-    width: 24px; /* Or your preferred size */
-    height: 24px; /* Or your preferred size */
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
     cursor: help;
-    align-items: center; /* Center the icon vertically */
-    justify-content: center; /* Center the icon horizontally */
+    align-items: center;
+    justify-content: center;
 }
 
-/* Tooltip Text */
+/* Tooltip text styles */
 .tooltip-text {
     visibility: hidden;
     width: 175px;
@@ -271,14 +281,14 @@ p {
     transform: translateX(-50%) translateY(0);
     opacity: 0;
     transition: opacity 0.3s, transform 0.3s;
-    pointer-events: none; /* Ensures that the text doesn't interfere with mouse events */
+    pointer-events: none;
 }
 
 .tooltip-icon:hover .tooltip-text,
 .tooltip-icon:focus .tooltip-text {
     visibility: visible;
     opacity: 1;
-    transform: translateX(-50%) translateY(-10px); /* Adjust for the tooltip to appear above the icon */
+    transform: translateX(-50%) translateY(-10px);
 }
 
 /* Tooltip arrow */
@@ -294,12 +304,111 @@ p {
 }
 
 .tooltip-text img {
-    max-width: 100%; /* Ensures the image fits within the tooltip */
-    height: auto; /* Maintains aspect ratio */
-    margin-top: 10px; /* Space above the image */
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
 }
 
-/* Footer Styles */
+/* Wide container styles for blog post pages */
+.wide-container {
+    display: grid;
+    grid-area: container;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.posts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.post {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.post h2 {
+    margin-top: 0;
+    color: var(--highlight-color);
+    font-size: 1.75rem;
+}
+
+.post p {
+    color: var(--main-text-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.post a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--third-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.post a:hover {
+    color: var(--highlight-color);
+    text-decoration: underline;
+}
+
+/* Blog post page styles */
+.post-content-container {
+    display: grid;
+    grid-area: container;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.post-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-content h1 {
+    font-size: 1.5rem; /* Smaller title size for mobile */
+    color: var(--highlight-color);
+    margin-top: 0;
+    text-align: center;
+}
+
+.post-content p {
+    font-size: 1.1rem;
+    color: var(--main-text-color);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.return-link {
+    font-size: 0.875rem;
+    color: var(--highlight-color);
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.return-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
 .footer {
     grid-area: footer;
     background: #ffffff;
@@ -308,6 +417,9 @@ p {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px; /* Ensure some space between content and footer */
+    font-size: 1rem;
+    color: var(--main-text-color);
+    line-height: 1.6;
 }
 
 .disclaimer {
@@ -315,6 +427,8 @@ p {
     font-size: 0.875rem;
     margin: 0;
 }
+
+/* Media queries for responsive design */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -342,6 +456,23 @@ p {
         padding: 0;
     }
 
+    .post-content h1 {
+        font-size: 2rem; /* Slightly larger title for tablets */
+        text-align: left;
+    }
+
+    .post-content h2 {
+        font-size: 1.75rem; /* Slightly larger title for tablets */
+    }
+
+    .post-content {
+        font-size: 1.2rem; /* Slightly larger font for better readability */
+    }
+
+    .return-link {
+        text-align: left;
+    }
+
     .footer {
         padding: 20px 40px; /* More padding on larger screens */
     }
@@ -359,26 +490,26 @@ p {
             "header header"
             "form results"
             "ad ad"
+            "container container"
             "footer footer";
     }
 
     .blog-link-container {
-        display: block; /* Stack the link below the logo */
-        padding-top: 10px; /* Add some space above the link */
-        text-align: left; /* Align to the left */
+        display: block;
+        padding-top: 10px;
+        text-align: left;
     }
 
     .text-container {
-        padding-left: 20px; /* Add some padding to separate the text from the logo */
+        padding-left: 20px;
     }
 
     .header {
         display: grid;
         grid-template-columns: auto 1fr;
-        align-items: start; /* Align items to the start of the container */
+        align-items: start;
     }
 
-    /* Adjusting the header font size and padding as needed */
     .header h1 {
         font-size: 2.5rem;
     }
@@ -394,14 +525,25 @@ p {
     .form button {
         font-size: 1.5rem;
     }
+
+    .post-content-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .post-content h1 {
+        font-size: 2rem;
+    }
+
+    .post-content p {
+        font-size: 1.1rem;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .grid-container {
-        max-width: 1140px; /* Optional: Adjust this as needed for your design */
-        margin: auto; /* Center the container */
+        max-width: 1140px;
+        margin: auto;
     }
-
-    /* Header, form-container, and results-container will retain the layout from the previous breakpoint */
 }

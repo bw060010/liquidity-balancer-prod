@@ -23,3 +23,4 @@ Route::get('/', function () {
 Route::get('/', [CalculationController::class, 'showForm']);
 Route::post('/', [CalculationController::class, 'performCalculation']);
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');

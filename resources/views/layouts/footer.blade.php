@@ -1,6 +1,4 @@
 <footer class="footer">
-    <p>© {{ date('Y') }} My Laravel Site. All rights reserved.</p>
-    <!-- Social links or additional navigation -->
-    <a href="/privacy-policy" class="footer-link">Privacy Policy</a>
-    <a href="/terms-of-service" class="footer-link">Terms of Service</a>
+    <p>© 2024. Discover the latest trends and insights in the world of cryptocurrency. Stay updated with our in-depth
+        articles, market analysis, and expert opinions. Join the global community of crypto enthusiasts today.</p>
 </footer>

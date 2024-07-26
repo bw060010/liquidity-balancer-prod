@@ -105,8 +105,7 @@
                                     fill="#0D0D0D"></path>
                             </svg>
                             <span class="tooltip-text" role="tooltip">Enter the latest market price of Coin B
-                                (find on CoinGecko or similar).
-                                A.</span>
+                                (find on CoinGecko or similar).</span>
                         </span>
                     </div>
                     <input type="text" name="coinB_price" id="coinB_price" pattern="\d+(\.\d+)?" class="input-field"
