@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Blogs - Latest Crypto News and Articles')
+
 @section('content')
     <div class="wide-container">
         @if (empty($posts))

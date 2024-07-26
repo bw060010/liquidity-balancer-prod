@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', $post['title'] . ' - Latest Crypto News and Articles')
+
 @section('content')
     <div class="post-content-container">
         <div class="post-content">
