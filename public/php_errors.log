@@ -1,0 +1,2 @@
+[27-Jul-2024 16:55:36 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\BlogController::index() in C:\Users\SP\Documents\GitHub\liquidity-balancer-prod\app\Http\Controllers\BlogController.php on line 58
+[27-Jul-2024 17:07:36 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\BlogController::index() in C:\Users\SP\Documents\GitHub\liquidity-balancer-prod\app\Http\Controllers\BlogController.php on line 58

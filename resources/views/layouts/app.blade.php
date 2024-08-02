@@ -25,10 +25,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Default Title')</title>
+    <meta name="description" content="@yield('description', 'Default Description')">
+    <meta name="keywords" content="@yield('keywords', 'Default Keywords')">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Liquidity Balancer Calculator | Optimize LP Deposits - Liquidity-Balancer.com</title>
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('icons/favicon-32x32.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('icons/apple-touch-icon.png') }}">
     @stack('head')

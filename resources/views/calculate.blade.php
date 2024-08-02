@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Crypto Liquidity Balancer Calculator | Optimize LP Deposits - Liquidity-Balancer.com')
+
 @section('content')
     <section class="form-container">
         <h2>Input</h2>

@@ -1,0 +1,103 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f0f0f0;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 0 #000;
+}
+
+h1 {
+    text-align: center;
+    color: #ff4500;
+    text-shadow: 1px 1px 2px #000;
+}
+
+form,
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+}
+
+button,
+.btn {
+    padding: 10px;
+    border: 2px solid #000;
+    background-color: #ff4500;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #000;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px; /* Ensure same width for buttons */
+    text-align: center;
+}
+
+button.btn {
+    height: 40px;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #ff6347;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 2px solid #000;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons form {
+    margin: 0;
+}
