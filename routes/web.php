@@ -30,7 +30,6 @@ Auth::routes(['register' => false, 'reset' => false]);
 //Auth::routes(['reset' => false]);
 //Auth::routes();
 
-
 Route::middleware(['auth'])->group(function () {
     Route::get('/admin/blog', [BlogController::class, 'admin_index']);
     Route::get('/admin/blog/create', [BlogController::class, 'create']);
